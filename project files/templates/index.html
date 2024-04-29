@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+/* Global reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #2F3C7E;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.active {
+  background-color: #555;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.subcontent {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #F96167;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #c4ffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a class="active" href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+  <a href="#">Blog</a>
+</div>
+
+<div class="container">
+  <div class="content">
+    <h1>VIDEO GAME SALES</h1>
+    <img src="{{ url_for('static', filename='game.png') }}" alt="Main Image">
+    <p>"Video game sales refer to the distribution and revenue generated from game titles across platforms like consoles, PC, and mobile. Sales data includes unit sales, revenue, platform distribution, and regional performance, offering insights into industry trends and consumer preferences."</p>
+
+    <div class="subcontent">
+      <h2>VIDEO GAME SALES DASHBOARD</h2>
+      <img src="{{ url_for('static', filename='dashboard1.png' ) }}" alt="Sub Image1">
+      <p>A video game sales dashboard is a visual representation of various metrics and key performance indicators (KPIs) related to the sales of video gamesThese dashboards are designed to provide insights to stakeholders such as game developers, publishers, marketers, and retailers, helping them make informed decisions about product development, marketing strategies, and distribution channels. They can be customized based on specific business needs and can range from simple spreadsheets to interactive web-based applications with dynamic visualizations.</p>
+    </div>
+
+    <div class="subcontent">
+      <h2>TOP SELLING GAMES IN DIFFERENT COUNTRIES</h2>
+      <img src="{{ url_for('static', filename='dashboard2.png') }}" alt="Sub Image1">
+      <p>A description of the top selling games in different countries typically involves identifying the most popular video game titles based on sales data within each specific region.  Gather sales data from retailers, digital distribution platforms, and market research firms that track video game sales. This data should cover a designated time period (e.g., weekly, monthly, yearly) and be specific to each country or region of interest.</p>
+    </div>
+    <div class="subcontent">
+      <h2>STORY</h2>
+      <img src="{{ url_for('static', filename='story1.png' ) }}" alt="Sub Image 2" style="width: 40%;">
+      <p>This area  chart shows how sales have changed over time in Japan, Europe, and North America, from 1980 to 2020.</p>
+    </div>
+    
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story2.png') }}" alt="Sub Image 3" style="width: 40%;">
+      <p> In this bubble chart, each game genre is represented by a bubble, with the size of the bubble indicating its rank.</p>
+    </div>
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story3.png') }}" alt="Sub Image 4" style="width: 40%;">
+      <p>This graph chart illustrating global game sales from 1980 to 2020 provides a comprehensive overview of the gaming industry's growth .</p>
+    </div>
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story4.png') }}" alt="Sub Image 5" style="width: 40%;">
+      <p>This bar chart showcasing gaming publishers and their respective global sales, where Nintendo emerges with the highest global sales.</p>
+    </div>
+    
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story5.png' ) }}" alt="Sub Image 6" style="width: 40%;">
+      <p>This  bar chart detailing the genre and platform of video games, where the action genre emerges with the highest representation among categories such as shooter, RPG, and others.</p>
+    </div>
+
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story6.png' ) }}" alt="Sub Image 7" style="width: 40%;">
+      <p>This pie chart illustrating game sales in Europe, where Wii Sports stands out with the highest sales among other titles.</p>
+    </div>
+
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story7.png' ) }}" alt="Sub Image 8" style="width: 40%;">
+      <p>It is a tree chart showcasing the top 10 selling video games in Japan, where Mario Kart Wii emerges with the highest sales among the listed titles.</p>
+    </div>
+
+    <div class="subcontent">
+      <h2></h2>
+      <img src="{{ url_for('static', filename='story8.png' ) }}" alt="Sub Image 5" style="width: 40%;">
+      <p>In this  stacked bar chart displaying the top 10 selling video games in North America, where Wii Sports emerges with the highest sales among the listed titles,.</p>
+    </div>
+    <div class="card">
+      <h2>Team Members</h2>
+      <ul>
+        <li>pamu poornima (Leader)</li>
+        <li>pasupu reddy yashwanth</li>
+        <li>palikila rohit reddy</li>
+        <li>pappala hareesh</li>
+        <li>paila sunil kumar</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 My Website. All rights reserved.</p>
+</div>
+
+</body>
+</html>
+
+
